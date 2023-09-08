@@ -73,6 +73,31 @@ Custom CSS styles have been applied to create an appealing and user-friendly int
 
 ## Testing and Documentation
 
+## Cloning and Running the Project
+
+Here's a concise guide on how to clone and run the project using Vite without relying on Yarn:
+
+**Step 1: Clone the Repository**
+- Open your terminal and execute `git clone <repository-url>`.
+- Replace `<repository-url>` with the URL of the repository you wish to clone.
+
+**Step 2: Navigate to the Project Directory**
+- Utilize the `cd` command to enter the project directory: `cd project-directory-name`.
+
+**Step 3: Install Dependencies**
+- Install project dependencies using npm:
+  - Run: `npm install`
+
+**Step 4: Start the Development Server**
+- Initiate the Vite development server with the following command:
+  - Run: `npm run dev`
+
+**Step 5: Access the Application**
+- Launch your web browser and navigate to `http://localhost:5173`.
+- You can now explore and test your application in development mode.
+
+Ensure that you have Node.js installed on your computer, as Vite relies on it to run projects.
+
 To ensure the app's functionality and maintainability, it includes:
 
 - **Unit Tests**: Components and reducers are thoroughly tested to ensure everything works as expected.
