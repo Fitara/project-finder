@@ -182,8 +182,12 @@ div:where(.css-dev-only-do-not-override-nnuwmp).ant-typography,
     margin-bottom: 4em;
 }
 
+.span-container {
+    margin-top: 10px;
+}
+
 .span-container p {
-    margin-top: 5px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -286,9 +290,16 @@ div:where(.css-dev-only-do-not-override-nnuwmp).ant-typography,
     padding: 12px;
 }
 
+.card-header {
+    padding-bottom: 5px;
+    background-color: lightgrey;
+}
+
 .card-style {
     display: flex;
     flex-direction: column;
+    background-color: rgb(220, 220, 230);
+    border-color: rgb(200, 200, 240);
     font-weight: 24px;
     height: 100%;
     width: 270px;
@@ -309,6 +320,7 @@ div:where(.css-dev-only-do-not-override-nnuwmp).ant-typography-h3>textarea,
 :where(.css-dev-only-do-not-override-nnuwmp).ant-typography h3 {
     margin-bottom: 0;
     color: rgba(0, 0, 0, 0.88);
+    background-color: rgb(215, 221, 131);
     border-radius: 0;
     font-weight: 400;
     font-size: 24px;
@@ -319,6 +331,12 @@ div:where(.css-dev-only-do-not-override-nnuwmp).ant-typography-h3>textarea,
     font-weight: lighter;
     margin-bottom: 0;
     height: 34px;
+}
+
+.card-project-id {
+    color: red;
+    font-weight: 200;
+    font-size: 16px;
 }
 
 .card-button {
