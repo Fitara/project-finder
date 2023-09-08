@@ -121,7 +121,7 @@ const Display: React.FC = () => {
             </Text>
           </div>
           <div className="footer-icon-container">
-            <Text strong className="connect-icon">
+            <Text className="connect-text">
               Connect with us
             </Text>
             <div className="footer-icons">

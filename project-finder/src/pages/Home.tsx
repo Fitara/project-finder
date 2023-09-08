@@ -130,7 +130,7 @@ const Home = () => {
           ) : (
             <div className="content-container">
                 {projects.map((project: Project) => (
-                    <ProjectCard project={project} username={username} />
+                    <ProjectCard key={project.id} project={project} username={username} />
               ))}
             </div>
           )}

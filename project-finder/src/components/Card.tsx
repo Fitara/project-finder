@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project, username }) => {
           </div>
         </div>
         <Link to={`/project/${username}/${project.name}`}>
-          <Button className="card-button" style={{}} type="text">
+          <Button className="card-button" type="text">
             Read More
           </Button>
         </Link>

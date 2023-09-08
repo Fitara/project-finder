@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { LeftOutlined } from '@ant-design/icons'
 import { useParams, Link } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown'
+import { LeftOutlined } from '@ant-design/icons'
 import { Button, Typography, Spin} from 'antd';
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 
 const { Text } = Typography;
 
@@ -61,7 +63,7 @@ const ProjectDetail: React.FC = () => {
           <Text className='detail-project'><span className='detail-project-span'>Project :</span>{project.name}</Text>
           <Text className='detail-description'><span className='detail-description-span'>Description :</span>{project.description}</Text>
           <Text className='detail-readme-title'>README.md</Text>
-          <ReactMarkdown className='detail-readme'>{project.readmeContent}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className='detail-readme'>{project.readmeContent}</ReactMarkdown>
         </div>
       </div>
     </>
