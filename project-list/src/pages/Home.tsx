@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Layout, Input, Typography, Button, Row, Spin } from "antd";
+import { Layout, Input, Typography, Button, Spin } from "antd";
 import {
   GithubOutlined,
   LinkedinOutlined,
@@ -124,15 +124,15 @@ const Home = () => {
             if (e.key === 'Enter') handleSearch()
           }}
         />
-        <Content style={{ padding: "20px" }}>
+        <Content className="content-style">
           {loading ? (
-            <Spin size="large" />
+            <Spin className="spin-loading" size="large" />
           ) : (
-            <Row gutter={[16, 16]}>
-              {projects.map((project: Project) => (
-                  <ProjectCard key={project.id} project={project} username={username} />
+            <div className="content-container">
+                {projects.map((project: Project) => (
+                    <ProjectCard project={project} username={username} />
               ))}
-            </Row>
+            </div>
           )}
         </Content>
       </div>

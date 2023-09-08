@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { LeftOutlined } from '@ant-design/icons'
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown'
-import { Button, Typography } from 'antd';
+import { Button, Typography, Spin} from 'antd';
 
 const { Text } = Typography;
 
@@ -46,7 +46,7 @@ const ProjectDetail: React.FC = () => {
   }, [username, projectName]);
 
   if (!project) {
-    return <div>Loading...</div>;
+    return <Spin className="spin-loading" size="large" />;
   }
 
   return (
