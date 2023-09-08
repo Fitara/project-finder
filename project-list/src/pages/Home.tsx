@@ -111,7 +111,6 @@ const Home = () => {
           spellCheck="false"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          onClick={handleSearch}
           size="large"
           suffix={
             <Button
@@ -120,7 +119,10 @@ const Home = () => {
               onClick={handleSearch}
               loading={loading}
             />
-          } 
+          }
+          onKeyPress={(e) => {
+            if (e.key === 'Enter') handleSearch()
+          }}
         />
         <Content style={{ padding: "20px" }}>
           {loading ? (
